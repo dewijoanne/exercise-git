@@ -1,19 +1,37 @@
 1. Sebutkan step-step dan command line saat menginisasi project untuk menggunakan git hingga sampai push ke github
 
-git init . 
-git init [name]
+Setelah berhasil login ke GitHub, bisa mulai membuat repository. 
+Klik tombol New pada menu Repositories untuk membuat repository baru.
+Perlu mengisi detail informasi berikut:
 
-git remote add [name-origin] [link -https]
-git clone [link -https] -> jika repo sudah ada di Github
+Nama Repository : digunakan untuk identitas repository yang dibuat.
+Deskripsi Repository : berfungsi untuk deskripsi dari repository yang dibuat.
+Jenis Repository   : jenis repository  dibagi menjadi Public dan Private. Ketika Anda mengatur repository menjadi Public, orang lain dapat melihat repository yang Anda buat. Sebaliknya, jika Anda mengaturnya sebagai Private, repository tersebut hanya bisa diakses oleh Anda.
+Setelah mengisi detail informasi di atas, klik Create Repository.
 
-code .
+Selanjutnya, Anda perlu membuat folder pada local disk komputer Anda. Fungsinya adalah untuk menyimpan update file dari repository GitHub yang telah Anda buat.
 
-git add . 
-git add [file name]
+Setelah berhasil membuat folder pada local disk komputer Anda,  buka folder tersebut dengan cara klik kanan lalu pilih Git Bash Here.
 
-git commit -m "[message]"
+Setelah itu, ubah folder tersebut menjadi repository menggunakan perintah berikut:
+
+$ git init
+
+Untuk bisa menambahkan file ke repository GitHub, Anda perlu menerapkan langkah-langkah di bawah ini:
+
+Buat file di folder yang sudah dibuat (Test Git). Contohnya, di sini kami membuat file index.php
+Buka GitBash lalu masukkan perintah berikut:
+$ git add index.php
+Perintah tersebut tidak akan menghasilkan output apa pun.
+
+Selanjutnya, Anda perlu membuat Commit. Commit berfungsi untuk menambahkan update file serta komentar. Jadi setiap kontributor bisa memberikan konfirmasi update file di proyek yang sedang dikerjakan. Masukkan perintah berikut untuk membuat Commit:
+
+$ git commit -m "first commit"
+
+Langkah terakhir adalah push ke GitHub Push ini berfungsi untuk mengupload hasil akhir dari langkah-langkah di atas. Masukkan perintah berikut untuk melakukan push ke GitHub:
 
 git push -u origin master
+Perintah di atas akan menampilkan pop up sign in GitHub. Anda perlu login untuk melanjutkan proses push ke GitHub. 
 
 
 2. Apa perbedaan git reset dan git revert
