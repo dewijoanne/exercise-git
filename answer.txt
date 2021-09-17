@@ -1,0 +1,30 @@
+1. Sebutkan step-step dan command line saat menginisasi project untuk menggunakan git hingga sampai push ke github
+
+git init . 
+git init [name]
+
+git remote add [name-origin] [link -https]
+git clone [link -https] -> jika repo sudah ada di Github
+
+code .
+
+git add . 
+git add [file name]
+
+git commit -m "[message]"
+
+git push -u origin master
+
+
+2. Apa perbedaan git reset dan git revert
+
+GIT Revert akan membatalkan semua perubahan yang ada tanpa menghapus commit terakhir. 
+Jika menggunakan GIT Reset, commit terakhir akan hilang.
+
+3. Apa bedanya GIT dengan GITHUB
+
+Git adalah salah satu sistem pengontrol versi (Version Control System) pada proyek perangkat lunak yang diciptakan oleh Linus Torvalds.
+Tugasnya adalah mencatat setiap perubahan pada File (termasuk code yang kita buat) pada suatu proyek baik dikerjakan secara individu maupun tim.
+it adalah aplikasi yang dapat melacak setiap perubahan yang terjadi pada suatu folder atau file.
+
+GitHub adalah sebuah website dan layanan berbasis cloud bagi para developer untuk menyimpan dan mengelola kode, serta mendokumentasikan dan mengontrol perubahannya.
